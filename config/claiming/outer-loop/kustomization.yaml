@@ -6,3 +6,6 @@ resources:
 - catalog.yaml
 - orders.yaml
 - ingress.yaml
+- catalog_queue_serviceclaim.yaml
+- catalog_rds_psql_serviceclaim.yaml
+- orders_table_serviceclaim.yaml

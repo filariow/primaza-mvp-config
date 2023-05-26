@@ -21,7 +21,11 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: AWS_PROVIDER
-          value: dynamodb
+          value: demo-app-orders-dynamodb
+        - name: DYNAMODB_PROVIDER
+          value: demo-app-orders-dynamodb
+        - name: SERVICE_BINDING_ROOT
+          value: /bindings
         resources:
           limits:
             cpu: 100m
@@ -35,7 +39,11 @@ spec:
         imagePullPolicy: IfNotPresent
         env:
         - name: AWS_PROVIDER
-          value: dynamodb
+          value: demo-app-orders-dynamodb
+        - name: DYNAMODB_PROVIDER
+          value: demo-app-orders-dynamodb
+        - name: SERVICE_BINDING_ROOT
+          value: /bindings
         resources:
           limits:
             cpu: 100m
